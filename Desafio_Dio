@@ -1,0 +1,8 @@
+def classificar_nivel_energia(valor):
+    if valor <= 8000:
+        print("Inseto")
+    else:
+        print("Mais de 8000!")
+
+valor_energia = float(input("Insira o valor do nível de energia: "))
+classificar_nivel_energia(valor_energia)
