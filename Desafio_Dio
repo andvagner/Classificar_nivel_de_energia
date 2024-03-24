@@ -28,3 +28,36 @@ for i in range(T):
 
    total = garrafas_vazias + garrafas_cheias
    print(total)
+
+
+def classificar_animal():
+    tipo = input().lower()
+    classe = input().lower()
+    dieta = input().lower()
+
+    if tipo == "vertebrado":
+        if classe == "ave":
+            if dieta == "carnivoro":
+                print("aguia")
+            elif dieta == "onivoro":
+                print("pomba")
+        elif classe == "mamifero":
+            if dieta == "onivoro":
+                print("homem")
+            elif dieta == "herbivoro":
+                print("vaca")
+
+    if tipo == "invertebrado":
+        if classe == "inseto":
+            if dieta == "hematofago":
+                print("pulga")
+            elif dieta == "herbivoro":
+                print("lagarta")
+        elif classe == "anelideo":
+            if dieta == "hematofago":
+                print("sanguessuga")
+            elif dieta == "onivoro":
+                print("minhoca")
+
+# Chamando a função para classificação do animal
+classificar_animal()
